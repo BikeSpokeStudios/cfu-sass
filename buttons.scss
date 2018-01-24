@@ -33,6 +33,17 @@ button, button.btn, a.btn, a.button.small-button,
         margin-bottom: 4px;
     }
 }
+//Button wrap for page bottoms
+.button-wrap {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 190px;
+  text-align: center;
+}
+
+.flow-button {
+  display: inline-block;
+}
 
 // Membership
 li.membership {

@@ -26,7 +26,7 @@ body.home-page:not(.logged-in) .main .column .col-md-9 {
   margin-bottom: 1.6em; }
 
 a, a:hover, a:focus, a:active {
-  color: #ff0000; }
+  color: #cf0e00; }
 
 hr {
   border-top: 1px dotted #999; }
@@ -61,6 +61,15 @@ button, button.btn, a.btn, a.button.small-button,
     button, button.btn, a.btn, a.button.small-button,
     .btn.btn-default, .btn.btn-danger, .btn.btn-primary, .btn.btn-success, .btn.btn-info, input.submit-button {
       margin-bottom: 4px; } }
+
+.button-wrap {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 190px;
+  text-align: center; }
+
+.flow-button {
+  display: inline-block; }
 
 li.membership {
   background-color: #eee; }
@@ -426,6 +435,17 @@ body.page-type-blog-post #reactions {
   margin-bottom: 0; }
 
 /**** DONATION ****/
+.membership-list {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 190px;
+  text-align: center;
+  padding: 0; }
+
+.membership-list li {
+  display: inline-block;
+  float: none !important; }
+
 .content-pages-show-donation-wide #content li {
   margin-bottom: 0; }
 

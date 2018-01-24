@@ -1,3 +1,18 @@
+//Centering the membership buttons
+.membership-list {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 190px;
+  text-align: center;
+  padding: 0;
+}
+
+.membership-list li {
+  display: inline-block;
+  float: none !important;
+}
+
+//For displaying the membership type buttons
 .content-pages-show-donation-wide #content {
   li {
     margin-bottom: 0;
