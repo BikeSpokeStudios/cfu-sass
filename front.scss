@@ -1,0 +1,158 @@
+.home-page {
+  .row {
+    margin: 0;
+  }
+  
+  #content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2.headline {
+    display: none;
+  }
+
+  .text-content {
+    text-align: center;
+
+    > p {
+      text-align: left;
+      font-size: $font-large;
+    }
+
+    .bold-background {
+      margin-top: $space-2xl;
+      margin-bottom: $space-2xl;
+      padding-top: $space-large;
+      padding-bottom: $space-large;
+
+      font-size: $font-xl;
+      text-align: center;
+
+      background-color: #000;
+      color: #fff;
+
+      strong {
+        border-bottom: 1px solid $red;
+      }
+    }
+  }
+
+  .icons {
+    margin-bottom: $space-2xl;
+    text-align: center;
+
+    img {
+      width: 14%;
+      margin: 1%;
+      height: auto;
+
+      @media all and (max-width: 768px) {
+        width: 30%;
+      }
+    }
+  }
+
+  /* while not logged in */
+  &:not(.logged-in) {
+    // nav.navbar {
+    //   background-color: $red;
+    //   margin-bottom: 0;
+    //   padding-left: $space-rel;
+    //
+    //   button.navbar-toggle, div#menu-collapse {
+    //     display: none !important;
+    //   }
+    // }
+
+    nav.navbar, h2.headline {
+      display: none;
+    }
+
+    .container, .main-container {
+      width: 100% !important;
+      padding: 0;
+      margin: 0;
+    }
+
+    .col-md-9 {
+      width: 100%;
+    }
+
+    .sidebar {
+      display: none;
+    }
+
+    .text-content {
+      > * {
+        padding-left: $space-rel;
+        padding-right: $space-rel;
+      }
+
+      // buttons at the bottom
+      > a {
+        padding: 0;
+      }
+    }
+
+    #splash-logo {
+      position: relative;
+
+      height: 50vw;
+      min-height: 400px;
+      max-height: 600px;
+      margin-bottom: $space-2xl;
+
+      text-align: center;
+
+      background-image: url('https://d3n8a8pro7vhmx.cloudfront.net/themes/595290f35ee54dde6a000000/attachments/original/1513658074/IMG_4222_pink2.jpg?1513658074');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+
+      &:after {
+        content: 'Foundry Photography';
+        position: absolute;
+        margin-right: -125px;
+        right: 0;
+        bottom: 165px;
+
+        transform: rotate(270deg);
+
+        width: 300px;
+        height: 20px;
+
+        text-align: left;
+        color: white;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: $space-default;
+        padding: 0 $space-default;
+        background-color: $red;
+
+        @media all and (max-width: 960px) {
+          left: 0;
+          top: auto;
+          bottom: $space-default;
+        }
+      }
+    }
+  }
+
+  /* while logged in */
+  &.logged-in {
+    #splash-logo {
+      display: none;
+    }
+
+    .text-content {
+      .bold-background {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

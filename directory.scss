@@ -1,0 +1,28 @@
+.content-pages-show-directory #content {
+  .span4 {
+    width: 50%;
+    display: inline-block;
+
+    &:last-of-type {
+      float: right;
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  .people-name {
+    font-size: $font-large;
+  }
+
+  .page-tag {
+    margin-right: 4px;
+    line-height: 1.8em;
+  }
+
+  .member-info {
+    color: $grey;
+    font-style: italic;
+  }
+}

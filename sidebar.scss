@@ -1,0 +1,53 @@
+// User profile
+div.sidebar {
+  .media {
+    .media-left img {
+      border-radius: 100%;
+    }
+  }
+}
+
+// Side navigation entries
+div.supporter-nav.btn-group-vertical {
+  padding-top: 10px;
+  border-top: $divider;
+
+  > a.btn.supporter-nav-btn {
+    margin-top: 5px;
+    font-size: $font-default;
+    border-radius: 0;
+    background-color: transparent;
+    color: #000;
+    text-align: left;
+
+    transition: color 100ms;
+
+    &:hover {
+      box-shadow: none;
+      color: $blue;
+    }
+  }
+}
+
+.sidebar .panel-footer { // just the RSS
+  padding-top: 20px;
+  border-top: $divider;
+  background-color: transparent;
+
+  > a {
+    margin-top: 5px;
+    font-size: $font-default;
+    border-radius: 0;
+    background-color: transparent;
+    color: #000;
+    text-align: left;
+
+    transition: color 100ms;
+
+    &:hover {
+      box-shadow: none;
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}

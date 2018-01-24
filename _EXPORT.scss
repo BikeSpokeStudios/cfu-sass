@@ -1,0 +1,97 @@
+// VARIABLES ETC.
+$red: #cf0e00;
+$blue: #227af8;
+$grey: #999;
+$grey-lt: #eee;
+$grey-bg: #fefefe;
+
+$font-default: 16px;
+$font-medium: 18px;
+$font-large: 24px;
+$font-xl: 36px;
+
+$space-rel: 15%;
+$space-default: 15px;
+$space-large: 30px;
+$space-2xl: 60px;
+
+$divider: 1px dotted $grey;
+
+/**** GENERAL STYLES & OVERRIDES ****/
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: $font-default;
+  background-color: $grey-lt;
+
+  &.home-page:not(.logged-in) {
+    background-color: $grey-bg;
+  }
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
+.main .column .col-md-9 {
+  background-color: $grey-bg;
+  padding: 30px;
+  box-shadow: 0 0 15px -8px;
+}
+
+body.home-page:not(.logged-in) .main .column .col-md-9 {
+  padding: 0;
+  box-shadow: none;
+}
+
+// Basic text defaults
+#content {
+    p, ul, li {
+    line-height: 1.6em;
+    margin-bottom: 1.6em;
+  }
+}
+
+// Links, decorations
+a, a:hover, a:focus, a:active {
+  color: $blue;
+}
+
+hr {
+  border-top: $divider;
+}
+
+.profile_image {
+  border-radius: 100%;
+}
+
+/**** BUTTONS AND INPUTS ****/
+@import 'buttons';
+
+/**** NAVIGATION ****/
+@import 'header';
+@import 'sidebar';
+@import 'footer';
+@import 'page-navigation';
+
+
+/**** FRONT PAGE ****/
+@import 'front';
+
+/**** LIST OF BLOG POSTS ****/
+@import 'post-list';
+
+/**** A BLOG POST ****/
+@import 'post';
+
+/**** DIRECTORY ****/
+@import 'directory';
+
+/**** FAQ ****/
+@import 'faq';
+
+/**** DONATION ****/
+@import 'donation';

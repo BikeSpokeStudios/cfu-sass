@@ -1,0 +1,80 @@
+// All buttons, sort of like a reset
+button, button.btn, a.btn, a.button.small-button,
+.btn.btn-default, .btn.btn-danger, .btn.btn-primary, .btn.btn-success, .btn.btn-info, input.submit-button {
+  padding: 10px 15px;
+  background-color: $red;
+  text-decoration: none;
+
+  border: 0;
+  border-radius: 0;
+
+  color: #fff;
+  font-size: $font-default;
+
+  transition: box-shadow 200ms;
+
+  &:hover {
+    box-shadow: 0 5px 15px -5px black;
+  }
+
+  &:focus {
+    border: 0;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &:hover a {
+    text-decoration: none;
+  }
+
+  @media all and (max-width: 767px) {
+        margin-bottom: 4px;
+    }
+}
+
+// Membership
+li.membership {
+  background-color: $grey-lt;
+
+  .buy a button.btn {
+    background-color: $red;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+// Inputs
+input,
+.input-group input.form-control,
+input.text,
+input.user-error,
+
+textarea,
+textarea.form-control,
+textarea.textarea,
+textarea.user-success {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 0;
+  box-shadow: none;
+
+  &:focus {
+    border: 1px solid $red;
+  }
+}
+
+// "Reaction" (user comments)
+div.panel.reaction-wrap {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  div.form-wrap {
+    padding: 0;
+  }
+}

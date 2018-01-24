@@ -1,0 +1,129 @@
+nav.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  height: 115px;
+  max-height: 115px;
+  transition: max-height 200ms;
+}
+
+.navbar-inverse {
+  background-color: #000;
+  border: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+  margin-top: 40px;
+  transition: margin-top 200ms;
+  border: 0;
+  border-radius: 0;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+   background-color: $red;
+}
+
+.navbar-brand {
+  max-width: 200px;
+  max-height: 200px;
+
+  img {
+    transition: width 200ms, height 200ms, max-width 200ms, max-height 200ms;
+  }
+}
+
+@media all and (min-width: 768px) {
+  ul.navbar-nav {
+  	margin-top: 40px;
+    float: none;
+    text-align: right;
+	}
+  ul.navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+
+  .navbar-inverse ul.navbar-nav > li {
+    border: 0;
+    border-bottom: 4px solid transparent;
+    transition: border 0.2s;
+
+    &.active a {
+      background-color: transparent;
+    }
+  }
+
+  .navbar-inverse ul.navbar-nav > li:hover {
+    border-bottom: 4px solid $red;
+    transition: border 0.2s;
+  }
+
+  ul.navbar-nav > li > .dropdown-menu {
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+}
+
+// Collapsed navbar
+.collapsed.navbar {
+  max-height: 40px;
+
+  ul.navbar-nav {
+    margin-top: 0;
+    transition: margin-top 200ms;
+  }
+
+  a.navbar-brand {
+    padding: 0;
+    max-width: 25px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-left: 0;
+
+    @media all and (max-width: 767px) {
+      margin-left: $space-default;
+    }
+
+    img {
+      width: auto;
+      max-width: none;
+      height: 60px;
+    }
+  }
+}
+
+.navbar-collapse {
+  #search-container {
+    padding-left: $space-default;
+    padding-right: $space-default;
+
+    #search {
+      width: 100%;
+    }
+  }
+}
+
+.collapsed.navbar-inverse .navbar-toggle {
+  margin-top: 8px;
+}
+
+// Mobile
+@media all and (max-width: 767px) {
+  #menu-collapse {
+    background-color: black;
+  }
+}
+
+// Altering the spacing to adjust for fixed-height
+body {
+  padding-top: 130px;
+}
+
+body.home-page:not(.logged-in) {
+  padding-top: 0;
+}

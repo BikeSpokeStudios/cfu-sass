@@ -1,0 +1,24 @@
+ol.breadcrumb {
+  border-radius: 0;
+  border-bottom: 1px dotted $grey;
+  background-color: transparent;
+  padding-left: 0;
+  color: $grey;
+
+  > li + li::before, > li.active {
+    color: $grey;
+  }
+}
+
+div.pagination {
+  display: block;
+  text-align: center;
+  font-size: $font-large;
+
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 $space-default;
+    }
+  }
+}

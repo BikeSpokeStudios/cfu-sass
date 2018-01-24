@@ -1,0 +1,37 @@
+body.page-type-blog {
+  #content {
+
+    hr {
+      margin: $space-large 0;
+    }
+
+    .byline {
+      margin-top: $space-default;
+
+      .byline-pic {
+        display: inline-block;
+
+        img {
+          border-radius: 100%;
+        }
+      }
+
+      .byline-info {
+        margin-left: $space-default;
+        display: inline-block;
+        color: $grey;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .page-excerpt {
+      a.button {
+        margin-right: $space-default;
+        margin-bottom: $space-large;
+      }
+    }
+  }
+}

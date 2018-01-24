@@ -1,0 +1,24 @@
+footer {
+  padding: $space-default;
+  margin-bottom: 0;
+  background-color: #000;
+  color: #fff;
+
+  .footer-left, .footer-right {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+  }
+  .footer-left { float: left; }
+  .footer-right { float: right; }
+
+  @media all and (max-width: 990px) {
+    .footer-left, .footer-right {
+      display: block;
+      text-align: left;
+      float: none;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
