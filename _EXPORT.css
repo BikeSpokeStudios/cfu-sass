@@ -26,7 +26,7 @@ body.home-page:not(.logged-in) .main .column .col-md-9 {
   margin-bottom: 1.6em; }
 
 a, a:hover, a:focus, a:active {
-  color: #227af8; }
+  color: #ff0000; }
 
 hr {
   border-top: 1px dotted #999; }
@@ -291,8 +291,6 @@ div.pagination {
       text-align: center;
       background-color: #000;
       color: #fff; }
-      .home-page .text-content .bold-background strong {
-        border-bottom: 1px solid #cf0e00; }
   .home-page .icons {
     margin-bottom: 60px;
     text-align: center; }
