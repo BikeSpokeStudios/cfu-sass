@@ -21,7 +21,11 @@ body.home-page:not(.logged-in) .main .column .col-md-9 {
   padding: 0;
   box-shadow: none; }
 
-#content p, #content ul, #content li {
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+#content p, #content ul {
   line-height: 1.6em;
   margin-bottom: 1.6em; }
 
@@ -427,8 +431,7 @@ body.page-type-blog-post #reactions {
   margin-right: 4px;
   line-height: 1.8em; }
 .content-pages-show-directory #content .member-info {
-  color: #999;
-  font-style: italic; }
+  color: #777; }
 
 /**** FAQ ****/
 .content-pages-show-faq #content li {

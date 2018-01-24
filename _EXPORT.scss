@@ -5,6 +5,7 @@ $blue: #227af8;
 $grey: #999;
 $grey-lt: #eee;
 $grey-bg: #fefefe;
+$dark-grey: #777;
 
 $font-default: 16px;
 $font-medium: 18px;
@@ -48,9 +49,15 @@ body.home-page:not(.logged-in) .main .column .col-md-9 {
   box-shadow: none;
 }
 
+// Basic header defaults
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 // Basic text defaults
 #content {
-    p, ul, li {
+    p, ul {
     line-height: 1.6em;
     margin-bottom: 1.6em;
   }
