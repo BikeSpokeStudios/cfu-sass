@@ -340,6 +340,9 @@ div.pagination {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat; }
+    @media all and (max-width: 480px) {
+      .home-page:not(.logged-in) #splash-logo {
+        min-height: 200px; } }
     .home-page:not(.logged-in) #splash-logo:after {
       content: 'Foundry Photography';
       position: absolute;
@@ -433,6 +436,15 @@ body.page-type-blog-post #reactions {
 .content-pages-show-directory #content .member-info {
   color: #777; }
 
+@media all and (min-width: 480px) {
+  .people-list {
+    vertical-align: top;
+    display: inline-block;
+    width: 47.5%;
+    margin: 1% !important; } }
+@media all and (min-width: 720px) {
+  .people-list {
+    width: 30%; } }
 /**** FAQ ****/
 .content-pages-show-faq #content li {
   margin-bottom: 0; }

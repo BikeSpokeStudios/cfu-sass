@@ -1,0 +1,21 @@
+// default is 100% width, no grid layout
+// 2-column grid is added at $grid-break-2-col
+// 3-column grid is added at $grid-break-3-col
+
+$grid-break-2-col: 480px;
+$grid-break-3-col: 720px;
+
+@media all and (min-width: $grid-break-2-col) {
+  .people-list {
+    vertical-align: top;
+    display: inline-block;
+    width: 47.5%;
+    margin: 1% !important;
+  }
+}
+
+@media all and (min-width: $grid-break-3-col) {
+  .people-list {
+    width: 30%;
+  }
+}
