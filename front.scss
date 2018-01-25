@@ -102,6 +102,10 @@
       max-height: 600px;
       margin-bottom: $space-2xl;
 
+      @media all and (max-width: 480px) {
+        min-height: 200px;
+      }
+
       text-align: center;
 
       background-image: url('https://d3n8a8pro7vhmx.cloudfront.net/themes/595290f35ee54dde6a000000/attachments/original/1513658074/IMG_4222_pink2.jpg?1513658074');
