@@ -314,7 +314,12 @@ div.pagination {
       @media all and (max-width: 768px) {
         .home-page .icons img {
           width: 30%; } }
-  .home-page:not(.logged-in) nav.navbar, .home-page:not(.logged-in) h2.headline {
+  .home-page:not(.logged-in) .notice.error {
+    margin: -30px 5% 40px 5%; }
+  .home-page:not(.logged-in) .navbar-brand > img {
+    max-width: 150%;
+    margin: -10px 0px 0px 15%; }
+  .home-page:not(.logged-in) h2.headline {
     display: none; }
   .home-page:not(.logged-in) .container, .home-page:not(.logged-in) .main-container {
     width: 100% !important;
@@ -329,8 +334,11 @@ div.pagination {
     padding-right: 15%; }
   .home-page:not(.logged-in) .text-content > a {
     padding: 0; }
+  .home-page:not(.logged-in) #splash-logo > img {
+    display: none; }
   .home-page:not(.logged-in) #splash-logo {
     position: relative;
+    margin-top: 115px;
     height: 50vw;
     min-height: 400px;
     max-height: 600px;

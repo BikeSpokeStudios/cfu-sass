@@ -64,7 +64,17 @@
     //   }
     // }
 
-    nav.navbar, h2.headline {
+    // Alerts should display below banner image and have different margins
+    .notice.error {
+      margin: -30px 5% 40px 5%;
+    }
+
+    .navbar-brand > img {
+      max-width: 150%;
+      margin: -10px 0px 0px 15%;
+    }
+
+    h2.headline {
       display: none;
     }
 
@@ -93,10 +103,12 @@
         padding: 0;
       }
     }
-
+    #splash-logo > img {
+      display: none;
+    }
     #splash-logo {
       position: relative;
-
+      margin-top: 115px;
       height: 50vw;
       min-height: 400px;
       max-height: 600px;
