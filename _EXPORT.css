@@ -209,6 +209,9 @@ body.home-page:not(.logged-in) {
 div.sidebar .media .media-left img {
   border-radius: 100%; }
 
+#signup_email {
+  height: 42px; }
+
 div.supporter-nav.btn-group-vertical {
   padding-top: 10px;
   border-top: 1px dotted #999; }
@@ -479,5 +482,11 @@ body.page-type-blog-post #reactions {
 
 .headline.profile {
   text-align: center; }
+
+h4.media-heading.profile-title {
+  margin-bottom: 16px; }
+
+.location {
+  margin-bottom: 8px; }
 
 /*# sourceMappingURL=_EXPORT.css.map */
