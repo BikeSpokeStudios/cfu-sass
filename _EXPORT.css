@@ -472,4 +472,12 @@ body.page-type-blog-post #reactions {
 .content-pages-show-donation-wide #content li {
   margin-bottom: 0; }
 
+/**** PROFILE PAGE ****/
+.media-center {
+  width: 72px;
+  margin: auto; }
+
+.headline.profile {
+  text-align: center; }
+
 /*# sourceMappingURL=_EXPORT.css.map */
