@@ -455,6 +455,12 @@ button.btn.btn-default.tiny-btn.region.unselected {
   background-color: #fefefe;
   color: #777; }
 
+.removed {
+  display: none !important; }
+
+.job-removed {
+  display: none !important; }
+
 @media all and (min-width: 480px) {
   .people-list {
     vertical-align: top;
