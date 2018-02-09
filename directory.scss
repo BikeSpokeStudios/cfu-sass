@@ -24,4 +24,15 @@
   .member-info {
     color: $dark-grey;
   }
+
+}
+button.btn.btn-default.tiny-btn.region {
+  margin-bottom: 4px;
+  padding: 5px 10px;
+
+}
+
+button.btn.btn-default.tiny-btn.region.unselected {
+  background-color: $grey-bg;
+  color: $dark-grey;
 }

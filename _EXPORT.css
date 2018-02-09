@@ -447,6 +447,14 @@ body.page-type-blog-post #reactions {
 .content-pages-show-directory #content .member-info {
   color: #777; }
 
+button.btn.btn-default.tiny-btn.region {
+  margin-bottom: 4px;
+  padding: 5px 10px; }
+
+button.btn.btn-default.tiny-btn.region.unselected {
+  background-color: #fefefe;
+  color: #777; }
+
 @media all and (min-width: 480px) {
   .people-list {
     vertical-align: top;
