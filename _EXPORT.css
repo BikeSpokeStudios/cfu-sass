@@ -432,21 +432,76 @@ body.page-type-blog-post #reactions {
       color: #333; }
 
 /**** DIRECTORY ****/
-.content-pages-show-directory #content .span4 {
-  width: 50%;
-  display: inline-block; }
-  .content-pages-show-directory #content .span4:last-of-type {
-    float: right; }
-  .content-pages-show-directory #content .span4 li {
-    margin-bottom: 0; }
-.content-pages-show-directory #content .people-name {
-  font-size: 24px; }
-.content-pages-show-directory #content .page-tag {
-  margin-right: 4px;
-  line-height: 1.8em; }
-.content-pages-show-directory #content .member-info {
-  color: #777; }
-
+.content-pages-show-directory #content {
+  /* Safari 4.0 - 8.0 */
+  /* Standard syntax */
+  /* Safari 4.0 - 8.0 */
+  /* Standard syntax */ }
+  .content-pages-show-directory #content .span4 {
+    width: 50%;
+    display: inline-block; }
+    .content-pages-show-directory #content .span4:last-of-type {
+      float: right; }
+    .content-pages-show-directory #content .span4 li {
+      margin-bottom: 0; }
+  .content-pages-show-directory #content .people-name {
+    font-size: 24px; }
+  .content-pages-show-directory #content .page-tag {
+    margin-right: 4px;
+    line-height: 1.8em; }
+  .content-pages-show-directory #content .member-info {
+    color: #777; }
+  .content-pages-show-directory #content .people-list.media {
+    -webkit-animation: show 0.3s ease-in-out;
+    /* Safari 4.0 - 8.0 */
+    animation: show 0.3s ease-in-out; }
+  .content-pages-show-directory #content .hide {
+    -webkit-animation: hide 0.3s ease-in-out;
+    animation: hide 0.3s ease-in-out; }
+@-webkit-keyframes show {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+@keyframes show {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+@-webkit-keyframes hide {
+  0% {
+    display: block;
+    opacity: 1; }
+  1% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    display: none; } }
+@keyframes hide {
+  0% {
+    display: block;
+    opacity: 1; }
+  1% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    display: none; } }
 button.btn.btn-default.tiny-btn.region {
   margin-bottom: 4px;
   padding: 5px 10px; }
