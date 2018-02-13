@@ -1,9 +1,13 @@
 /**** GENERAL STYLES & OVERRIDES ****/
 body, html {
   overflow-x: hidden;
-  overflow-y: scroll; }
+  margin: 0;
+  padding: 0; }
 
 body {
+  position: relative;
+  height: auto !important;
+  min-height: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #eee; }
@@ -246,6 +250,8 @@ div.supporter-nav.btn-group-vertical {
       text-decoration: none; }
 
 footer {
+  position: absolute;
+  width: 100%;
   padding: 15px;
   margin-bottom: 0;
   background-color: #000;
