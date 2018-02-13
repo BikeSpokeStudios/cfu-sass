@@ -22,6 +22,7 @@ $divider: 1px dotted $grey;
 /**** GENERAL STYLES & OVERRIDES ****/
 body, html {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
