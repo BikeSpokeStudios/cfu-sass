@@ -69,6 +69,30 @@ nav.navbar {
   }
 }
 
+// Setting some rules so all pages have full width header
+a.navbar-brand {
+  @media all and (min-width: 768px) {
+    margin-left: 15px;
+  }
+}
+
+ul.nav.navbar-nav {
+  @media all and (min-width: 768px) {
+    margin-right: 40px;
+  }
+}
+
+.navbar-brand > img {
+  max-width: 150%;
+  margin: -10px 0px 0px 15%;
+}
+
+.container:not(.main) {
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+
 // Collapsed navbar
 .collapsed.navbar {
   max-height: 40px;
@@ -83,7 +107,9 @@ nav.navbar {
     max-width: 25px;
     max-height: 40px;
     overflow: hidden;
-    margin-left: 0;
+    margin-left: 40px;
+    margin-top: 8px;
+
 
     @media all and (max-width: 767px) {
       margin-left: $space-default;

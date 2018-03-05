@@ -33,7 +33,8 @@
    transition: all 0.2s linear;
   }
 
-  .people-list.media.hide {
+  .people-list.media.hide, .people-list.media.job-hide, .people-list.media.hide-all-regions,
+  .people-list.media.hide-all-jobs {
     width: 0; /* reset everything that might affect the size and visibility */
     height: 0;
     padding: 0;
@@ -46,17 +47,13 @@
     transition: all 0.2s linear;
   }
 }
-button.btn.btn-default.tiny-btn.region {
+button.btn.btn-default.tiny-btn.region, button.btn.btn-default.tiny-btn.job {
   margin-bottom: 4px;
-  padding: 5px 10px;
+  padding: 4px 8px;
 
 }
 
-button.btn.btn-default.tiny-btn.region.unselected {
+button.btn.btn-default.tiny-btn.region.unselected, button.btn.btn-default.tiny-btn.job.unselected {
   background-color: $grey-bg;
   color: $dark-grey;
-}
-
-.job-removed {
-  display: none !important;
 }

@@ -54,16 +54,7 @@
 
   /* while not logged in */
   &:not(.logged-in) {
-    // nav.navbar {
-    //   background-color: $red;
-    //   margin-bottom: 0;
-    //   padding-left: $space-rel;
-    //
-    //   button.navbar-toggle, div#menu-collapse {
-    //     display: none !important;
-    //   }
-    // }
-
+  
     // Alerts should display below banner image and have different margins
     .notice.error {
       margin: -30px 5% 40px 5%;
