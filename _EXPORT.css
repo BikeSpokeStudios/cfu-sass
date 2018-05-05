@@ -473,6 +473,11 @@ body.page-type-blog-post #reactions {
   -o-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear; }
+.content-pages-show-directory #content .people-list.media > .media-body > a {
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 220px; }
 .content-pages-show-directory #content .people-list.media.hide, .content-pages-show-directory #content .people-list.media.job-hide, .content-pages-show-directory #content .people-list.media.hide-all-regions,
 .content-pages-show-directory #content .people-list.media.hide-all-jobs {
   width: 0;
@@ -481,6 +486,20 @@ body.page-type-blog-post #reactions {
   padding: 0;
   margin: 0 !important;
   opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+.content-pages-show-directory #content .people-list.media.hide *, .content-pages-show-directory #content .people-list.media.job-hide *, .content-pages-show-directory #content .people-list.media.hide-all-regions *,
+.content-pages-show-directory #content .people-list.media.hide-all-jobs * {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+  display: none;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;

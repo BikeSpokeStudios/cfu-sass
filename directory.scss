@@ -33,6 +33,13 @@
    transition: all 0.2s linear;
   }
 
+  .people-list.media > .media-body > a {
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 220px;
+  }
+
   .people-list.media.hide, .people-list.media.job-hide, .people-list.media.hide-all-regions,
   .people-list.media.hide-all-jobs {
     width: 0; /* reset everything that might affect the size and visibility */
@@ -40,6 +47,21 @@
     padding: 0;
     margin: 0 !important;
     opacity: 0;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .people-list.media.hide *, .people-list.media.job-hide *, .people-list.media.hide-all-regions *,
+  .people-list.media.hide-all-jobs * {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0 !important;
+    opacity: 0;
+    overflow: hidden;
+    display: none;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
